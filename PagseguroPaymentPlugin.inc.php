@@ -4,7 +4,7 @@
  * @file plugins/paymethod/pagseguro/PagseguroPaymentPlugin.inc.php
  *
  * Copyright (c) 2018 FFPL
- * Distributed under the GNU GPL v2. For full terms see the file docs/COPYING.
+ * Distributed under the MIT licence.
  * 
  * @class PagseguroPaymentPlugin
  * @ingroup plugins_paymethod_pagseguro
@@ -22,21 +22,21 @@ class PagseguroPaymentPlugin extends PaymethodPlugin {
 	 * @see Plugin::getName
 	 */
 	function getName() {
-		return 'PaypalPayment';
+		return 'PagSeguroPayment';
 	}
 
 	/**
 	 * @see Plugin::getDisplayName
 	 */
 	function getDisplayName() {
-		return __('plugins.paymethod.paypal.displayName');
+		return __('plugins.paymethod.pagseguro.displayName');
 	}
 
 	/**
 	 * @see Plugin::getDescription
 	 */
 	function getDescription() {
-		return __('plugins.paymethod.paypal.description');
+		return __('plugins.paymethod.pagseguro.description');
 	}
 
 	/**
@@ -54,16 +54,16 @@ class PagseguroPaymentPlugin extends PaymethodPlugin {
 	 * @copydoc PaymethodPlugin::getSettingsForm()
 	 */
 	function getSettingsForm($context) {
-		$this->import('PaypalPaymentSettingsForm');
-		return new PaypalPaymentSettingsForm($this, $context->getId());
+		$this->import('PagseguroPaymentSettingsForm');
+		return new PagseguroPaymentSettingsForm($this, $context->getId());
 	}
 
 	/**
 	 * @copydoc PaymethodPlugin::getPaymentForm()
 	 */
 	function getPaymentForm($context, $queuedPayment) {
-		$this->import('PaypalPaymentForm');
-		return new PaypalPaymentForm($this, $queuedPayment);
+		$this->import('PagseguroPaymentForm');
+		return new PagseguroPaymentForm($this, $queuedPayment);
 	}
 
 	/**
