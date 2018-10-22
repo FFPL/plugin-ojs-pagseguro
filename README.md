@@ -1,7 +1,8 @@
 # OJS Pagseguro Payment Plugin
 
-This is a PagSeguro Payment Plugin for the OJS.
+This is a PagSeguro  Payment Plugin for the OJS.
 
+![logo]
 
 ## Instalation
 
@@ -11,3 +12,4 @@ This is a PagSeguro Payment Plugin for the OJS.
 
 
 ###### * This plugin is based in the original PayPal Payment Plugin.
+[logo]: ./images/logo_pagseguro_icon.png "PagSeguro Logo"
