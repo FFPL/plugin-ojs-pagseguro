@@ -1,0 +1,19 @@
+{
+    "name": "ojs/pagseguro",
+    "description": "Pagseguro gateway for OJS",
+    "type": "plugin",
+    "require": {
+        "pagseguro/pagseguro-php-sdk": "^4.2",
+        "php": ">=5.6",
+        "ext-curl": "*",
+        "lib-curl": "*",
+        "lib-openssl": "*"
+    },
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Fued Lacouth",
+            "email": "mail.ffpl@gmail.com"
+        }
+    ]
+}
